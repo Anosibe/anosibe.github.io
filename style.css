@@ -157,6 +157,8 @@ html { height: 110%; }
 
 body { height: 110%; overflow: visible; }
 
+.main { height: 110%; }
+
 .bgcover { position: fixed; top: 0; left: 0; height: 110%; width: 100%; background: url("img/light_bg.jpg") no-repeat center center fixed; background-size: cover; z-index: -9999; }
 
 section { max-width: 100%; margin-left: auto; margin-right: auto; min-height: 110%; background: #000; opacity: 0.75; }
@@ -179,12 +181,10 @@ section:after { content: " "; display: block; clear: both; }
 
 @media only screen and (min-width: 0) { .nav-boite { display: none; } }
 @media only screen and (min-width: 1020px) { .nav-boite { border: 1px solid dimgray; width: 50px; position: absolute; height: 20%; top: 2%; left: 16px; border-radius: 6px; } }
-@media only screen and (min-width: 0) { #services .wrap { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
-  #services .wrap .service { -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; margin-right: 0; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+@media only screen and (min-width: 0) { #services .wrap .service { -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; margin-right: 0; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   #services .wrap .service:last-child { margin-right: 0; }
   #services .wrap .service .card { -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; margin-right: 0; min-width: 200px; margin-bottom: 26px; }
   #services .wrap .service .card:last-child { margin-right: 0; }
-  .contact__zone { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
   .contact__form { -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; margin-right: 2em; }
   .contact__local { -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; max-width: 300px; padding-top: 2em; }
   .contact__action { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; max-width: 100%; margin-left: auto; margin-right: auto; border-top: solid 1px dimgray; border-bottom: solid 1px dimgray; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 16px; }
@@ -309,7 +309,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { word-wrap: break-word; -w
 @media only screen and (min-width: 0) { .form__item { border: solid 1px dimgray; outline: 0px none; background: transparent none repeat scroll 0% 0%; display: block; width: 100%; margin-bottom: 16px; height: 36px; padding-left: 1em; padding-right: 1em; color: #ededed; font-size: 13px; border-radius: 6px; }
   select.form__item { width: 80%; }
   select.form__item option { color: #f9cf98; }
-  select.form__item.gender { width: 40%; }
+  select.form__item.gender { width: 80%; }
   textarea.form__item { width: 100%; height: 280px; } }
 @media only screen and (min-width: 1020px) { .form__item { width: 320px; }
   select.form__item { width: 320px; }
